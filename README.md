@@ -121,14 +121,14 @@ The final, model-ready dataset is saved as `data/preprocessed_data.csv`.
   - `Random Forest` or `Gradient Boosting` models (like XGBoost, LightGBM).
 - Systematically train and evaluate each model on our validation set. Keep a log of our experiments and their results for the paper. Use tools like `scikit-learn`'s `Pipeline` to ensure our preprocessing is applied consistently.
 
-🟦 **Error Analysis**
+✅ **Error Analysis**
 
 - For our best-performing model:
   - Generate a confusion matrix. Which chefs are most often confused with each other?
   - Inspect wrong predictions. Look at specific recipes our model got wrong. Why do we think it failed? Was the recipe text ambiguous? Is the label questionable? 
   - These observations will form the core of the "discussion" section in our paper.
 
-🟦 **Write the Short Paper**
+✅ **Write the Short Paper**
 
 - **Structure**: Use the provided template. The paper is a maximum of 2 pages.
   - **Introduction**: Briefly describe the task: mapping a recipe to its creator chef.
@@ -137,7 +137,7 @@ The final, model-ready dataset is saved as `data/preprocessed_data.csv`.
   - **Conclusion**: Summarize our work and key findings.
 - **Citations**: Identify all external sources/code we used.
 
-🟦 **Generate Final Test Predictions**
+✅ **Generate Final Test Predictions**
 
 1. **Select Best Model**: Choose our single best model based on our validation set performance.
 2. **Retrain**: Retrain this model on the entire `train.csv` dataset.
@@ -147,7 +147,7 @@ The final, model-ready dataset is saved as `data/preprocessed_data.csv`.
    - Predict the `chef_id` for each recipe.
    - Save the predictions to a file named `results.txt`, with one `chef_id` per line, ensuring the line numbers match the test file.
 
-🟦 **Final Submission**
+✅ **Final Submission**
 
 - **Package**: Create a zip file named `NUM.zip` (where NUM is our group number).
 - **Contents**: The zip file must contain:
